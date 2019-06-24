@@ -29,7 +29,7 @@ window.Vue = require('vue');
 
 Vue.config.delimiters = ['[[', ']]'];
 var app = new Vue({
-    el: 'li',
+    el: '#rooms_show',
     data: {
         roomId: roomId,
         userId: userId,

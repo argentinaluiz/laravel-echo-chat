@@ -27,7 +27,7 @@
     }
 </style>
 
-    <div class="container">
+    <div id="rooms_show" class="container">
         <div class="row">
             <div class="col-md-2">
                 <h3>Usuários</h3>
@@ -45,7 +45,7 @@
                         <ul class="chat list-unstyled">
                             <li v-for="o in messages" class="clearfix" 
                             v-bind:class="{left: userId != o.user.id, right: userId == o.user.id}">
-                            <span v-bind:class="{pull-left: userId != o.user.id, pull-right: userId == o.user.id}">
+                            <span v-bind:class="{'pull-left': userId != o.user.id, 'pull-right': userId == o.user.id}">
                                 <img v-bind:src="createPhoto(o.user.email)" class="img-circle"/>
                             </span>
                                 <div class="chat-body>">
